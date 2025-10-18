@@ -1,6 +1,6 @@
 <?php
 
-class Mahasiswa extends Controller
+class Dashboard extends Controller
 {
     protected $mahasiswaModel;
     public function __construct()
@@ -10,13 +10,12 @@ class Mahasiswa extends Controller
     public function index()
     {
         $data = [
-            'title' => 'Data Mahasiswa',
-            'active_mahasiswa' => 'active',
-            'dt_mahasiswa' => $this->mahasiswaModel->getAllmahasiswa()
+            'title' => 'Dashboard',
+            'active_dashboard' => 'active',
         ];
 
         $this->views('templates/header', $data);
-        $this->views('master/mahasiswa/index', $data);
+        $this->views('index', $data);
         $this->views('templates/footer');
     }
 }

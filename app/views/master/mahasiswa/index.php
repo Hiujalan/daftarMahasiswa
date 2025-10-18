@@ -2,9 +2,9 @@
 <div class="fixed-card mt-3">
   <div class="row me-0">
 
-    <div class="col-md-11 mx-auto">
+    <div class="col-md-12 mx-auto">
       <div class="card shadow-sm mb-0 ">
-        <div class="m-2 mb-0 d-flex justify-content-between">
+        <div class="card-header mb-0 d-flex justify-content-between">
           <h3 class="text-themecolor"><?= $data['title']; ?></h3>
           <a href="#addModal" data-bs-toggle="modal" class="btn btn-primary">Tambah Data <i class="fa-solid fa-plus ms-2"></i></a>
         </div>

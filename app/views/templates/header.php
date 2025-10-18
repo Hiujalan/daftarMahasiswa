@@ -31,10 +31,33 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Data Mahasiswa</a>
-                    <a class="nav-link" href="#">Tentang Kami</a>
                 </div>
             </div>
         </div>
     </nav>
+
+    <div class="d-flex">
+        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;height: 100vh; position: sticky; top: 0;">
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="<?= BASEURL; ?>" class="nav-link <?= isset($data['active_dashboard']) ? $data['active_dashboard'] : ''; ?>" aria-current="page">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= BASEURL . '/mahasiswa'; ?>" class="nav-link <?= isset($data['active_mahasiswa']) ? $data['active_mahasiswa'] : ''; ?>" aria-current="page">
+                        <i class="fa-solid fa-users"></i>
+                        Data Mahasiswa
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link <?= isset($data['active_about']) ? $data['active_about'] : ''; ?>" aria-current="page">
+                        <i class="fa-solid fa-question"></i>
+                        Tentang Kami
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="conten-warp flex-grow-1 p-3">
