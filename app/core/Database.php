@@ -2,16 +2,11 @@
 
 class Database
 {
-    private $host = '146.190.18.200';
-    private $user = 'alanjagophp';
-    private $pass = 'gajahphp';
-    private $port = 25436;
-    private $db_name = 'db_mahasiswa';
-
-    // private $host = '146.190.18.200';
-    // private $user = 'alanjagophp';
-    // private $pass = 'gajahphp';
-    // private $db_name = 'db_mahasiswa';
+    private $host = DB_HOST;
+    private $user = DB_USER;
+    private $pass = DB_PASS;
+    private $port = DB_PORT;
+    private $db_name = DB_NAME;
 
     private $dbh;
     public $stmt;
