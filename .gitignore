@@ -1,0 +1,18 @@
+# File config
+app/config/config.php
+
+# Environment file
+.env
+*.env
+
+# Vendor dan dependencies
+/vendor/
+node_modules/
+
+# Log dan cache
+*.log
+storage/
+
+# Sistem file
+.DS_Store
+Thumbs.db

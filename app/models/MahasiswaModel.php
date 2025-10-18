@@ -11,7 +11,7 @@ class mahasiswaModel
 
     public function getAllmahasiswa()
     {
-        $this->db->query('SELECT*FROM ' . $this->table);
+        $this->db->query('SELECT * FROM ' . $this->table);
         return $this->db->resultSet();
     }
     public function getMahasiswaByNIM($nim)
