@@ -1,20 +1,28 @@
 <?php
 
-class Database {
+class Database
+{
     private $host = '146.190.18.200';
     private $user = 'alanjagophp';
     private $pass = 'gajahphp';
+    private $port = 25436;
     private $db_name = 'db_mahasiswa';
+
+    // private $host = '146.190.18.200';
+    // private $user = 'alanjagophp';
+    // private $pass = 'gajahphp';
+    // private $db_name = 'db_mahasiswa';
 
     private $dbh;
     public $stmt;
 
-    public function __construct() {
-        $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->db_name;
+    public function __construct()
+    {
+        $dsn = 'mysql:host=' . $this->host . ';port=' . $this->port . ';dbname=' . $this->db_name;
 
         $option = [
-        PDO::ATTR_PERSISTENT => true,
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+            PDO::ATTR_PERSISTENT => true,
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ];
 
         try {
@@ -23,21 +31,25 @@ class Database {
             die($e->getMessage());
         }
     }
-    
-    public function query($query) {
+
+    public function query($query)
+    {
         $this->stmt = $this->dbh->prepare($query);
     }
 
-    public function execute() {
+    public function execute()
+    {
         $this->stmt->execute();
     }
 
-    public function resultSet() {
+    public function resultSet()
+    {
         $this->execute();
         return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function single() {
+    public function single()
+    {
         $this->execute();
         return $this->stmt->fetch(PDO::FETCH_ASSOC);
     }
