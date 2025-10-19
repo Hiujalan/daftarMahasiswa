@@ -21,7 +21,7 @@
                                                     <i class="fa-solid fa-users fa-2xl"></i>
                                                 </div>
                                             </div>
-                                            <h5 class="fw-bold">10</h5>
+                                            <h5 class="fw-bold"><?= $data['count_mahasiswa']['total']; ?></h5>
                                         </div>
                                     </div>
                                 </div>
