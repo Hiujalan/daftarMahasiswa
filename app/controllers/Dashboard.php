@@ -12,6 +12,7 @@ class Dashboard extends Controller
         $data = [
             'title' => 'Dashboard',
             'active_dashboard' => 'active',
+            'count_mahasiswa' => $this->mahasiswaModel->getCountAllMahasiswa(),
         ];
 
         $this->views('templates/header', $data);

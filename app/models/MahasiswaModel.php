@@ -14,6 +14,12 @@ class mahasiswaModel
         $this->db->query('SELECT * FROM ' . $this->table);
         return $this->db->resultSet();
     }
+    public function getCountAllMahasiswa()
+    {
+        $this->db->query('SELECT COUNT(id) as total FROM ' . $this->table);
+        return $this->db->single();
+    }
+
     public function getMahasiswaByNIM($nim)
     {
         $this->db->query('SELECT*FROM ' . $this->table . 'WHERE nim= :nim');
