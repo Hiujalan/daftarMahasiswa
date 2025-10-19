@@ -5,10 +5,10 @@ class Controller {
         require_once __DIR__ . '/../views/' . $view . '.php';
     }
 
-     public function models($models)
+     public function models($model)
     {
-        require_once __DIR__ . '/../models/' . $models . '.php';
-        return new $models;
+        require_once __DIR__ . '/../models/' . $model . '.php';
+        return new $model;
     }
 }
 ?>

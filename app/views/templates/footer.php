@@ -1,7 +1,7 @@
 </div>
 </div>
 
-<nav class="navbar fixed-bottom bg-body-tertiary">
+<nav class="navbar fixed-bottom bg-body-tertiary text-center">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><?= date('Y'); ?> Uts Web Programming 2</a>
     </div>
