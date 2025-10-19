@@ -29,11 +29,12 @@ class MahasiswaModel {
     }
 
     public function tambahDataMahasiswa($data) {
-        $query = "INSERT INTO {$this->table} (nim, nama, semester, status, created_at)
-                  VALUES (:nim, :nama, :semester, :status, NOW())";
+        $query = "INSERT INTO {$this->table} (nim, nama, prodi, semester, status, created_at)
+                  VALUES (:nim, :nama, :prodi, :semester, :status, NOW())";
         $stmt = $this->db->prepare($query);
         $stmt->bindParam(':nim', $data['nim']);
         $stmt->bindParam(':nama', $data['nama']);
+        $stmt->bindParam(':prodi', $data['prodi']);
         $stmt->bindParam(':semester', $data['semester']);
         $stmt->bindParam(':status', $data['status']);
         return $stmt->execute();
@@ -41,11 +42,12 @@ class MahasiswaModel {
 
     public function updateDataMahasiswa($data) {
         $query = "UPDATE {$this->table}
-                  SET nim = :nim, nama = :nama, semester = :semester, status = :status
+                  SET nim = :nim, nama = :nama, prodi = :prodi, semester = :semester, status = :status
                   WHERE id = :id";
         $stmt = $this->db->prepare($query);
         $stmt->bindParam(':nim', $data['nim']);
         $stmt->bindParam(':nama', $data['nama']);
+        $stmt->bindParam(':prodi', $data['prodi']);
         $stmt->bindParam(':semester', $data['semester']);
         $stmt->bindParam(':status', $data['status']);
         $stmt->bindParam(':id', $data['id']);

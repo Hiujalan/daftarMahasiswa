@@ -19,6 +19,7 @@
                       <th>No</th>
                       <th>NIM</th>
                       <th>Nama Mahasiswa</th>
+                      <th>Program Studi</th>
                       <th>Semester</th>
                       <th>Status</th>
                       <th>Created At</th>
@@ -31,6 +32,7 @@
                         <td><?= $key + 1; ?></td>
                         <td><?= $mahasiswa['nim']; ?></td>
                         <td><?= $mahasiswa['nama']; ?></td>
+                        <td><?= $mahasiswa['prodi']; ?></td>
                         <td><?= $mahasiswa['semester']; ?></td>
                         <td><?= $mahasiswa['status']; ?></td>
                         <td><?= $mahasiswa['created_at']; ?></td>
@@ -68,6 +70,10 @@
         <div class="mb-3">
           <label for="nama" class="form-label">Nama Mahasiswa</label>
           <input type="text" class="form-control" id="nama" name="nama" required>
+        </div>
+        <div class="mb-3">
+          <label for="prodi" class="form-label">Program Studi</label>
+          <input type="text" class="form-control" id="prodi" name="prodi" required>
         </div>
         <div class="mb-3">
           <label for="semester" class="form-label">Semester</label>
@@ -108,6 +114,10 @@
         <div class="mb-3">
           <label for="nama" class="form-label">Nama Mahasiswa</label>
           <input type="text" class="form-control" name="nama" value="<?= $mhs['nama']; ?>" required>
+        </div>
+        <div class="mb-3">
+          <label for="prodi" class="form-label">Program Studi</label>
+          <input type="text" class="form-control" name="prodi" value="<?= $mhs['prodi']; ?>" required>
         </div>
         <div class="mb-3">
           <label for="semester" class="form-label">Semester</label>
