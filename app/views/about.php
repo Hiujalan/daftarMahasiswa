@@ -12,8 +12,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="row">
-                                <div class="col-lg-4 col-sm-12">
-                                    <div class="card border-info" style="width: 18rem;">
+                                <div class="col-lg-4 col-sm-12 mb-3">
+                                    <div class="card border-info">
                                         <img src="<?= BASEURL . '/img/alan.jpg'; ?>" class="card-img-top" alt="profile picture" style="max-height: 300px; object-fit: cover; object-position: center;">
                                         <div class="card-body">
                                             <h5 class="card-title">Alan Herva Ikhsan Saputra</h5>
@@ -21,8 +21,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-12">
-                                    <div class="card border-info" style="width: 18rem;">
+                                <div class="col-lg-4 col-sm-12 mb-3">
+                                    <div class="card border-info">
                                         <img src="<?= BASEURL . '/img/profile.jpg'; ?>" class="card-img-top" alt="profile picture" style="max-height: 300px; object-fit: cover; object-position: center;">
                                         <div class="card-body">
                                             <h5 class="card-title">Alan Herva Ikhsan Saputra</h5>
@@ -30,8 +30,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-12">
-                                    <div class="card border-info" style="width: 18rem;">
+                                <div class="col-lg-4 col-sm-12 mb-3">
+                                    <div class="card border-info">
                                         <img src="<?= BASEURL . '/img/profile.jpg'; ?>" class="card-img-top" alt="profile picture" style="max-height: 300px; object-fit: cover; object-position: center;">
                                         <div class="card-body">
                                             <h5 class="card-title">Alan Herva Ikhsan Saputra</h5>

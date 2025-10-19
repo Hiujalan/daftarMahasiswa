@@ -26,38 +26,57 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">CRUD UTS WEB 2</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                </div>
-            </div>
         </div>
     </nav>
 
     <div class="d-flex">
-        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;height: 100vh; position: sticky; top: 0;">
+        <div class="d-none d-md-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px; height: 100vh; position: sticky; top: 0;">
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="<?= BASEURL; ?>" class="nav-link <?= isset($data['active_dashboard']) ? $data['active_dashboard'] : ''; ?>" aria-current="page">
-                        <i class="fa-solid fa-house"></i>
-                        Home
+                    <a href="<?= BASEURL; ?>" class="nav-link <?= isset($data['active_dashboard']) ? $data['active_dashboard'] : ''; ?>">
+                        <i class="fa-solid fa-house"></i> Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= BASEURL . '/mahasiswa'; ?>" class="nav-link <?= isset($data['active_mahasiswa']) ? $data['active_mahasiswa'] : ''; ?>" aria-current="page">
-                        <i class="fa-solid fa-users"></i>
-                        Data Mahasiswa
+                    <a href="<?= BASEURL . '/mahasiswa'; ?>" class="nav-link <?= isset($data['active_mahasiswa']) ? $data['active_mahasiswa'] : ''; ?>">
+                        <i class="fa-solid fa-users"></i> Data Mahasiswa
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?= BASEURL . '/about'; ?>" class="nav-link <?= isset($data['active_about']) ? $data['active_about'] : ''; ?>" aria-current="page">
-                        <i class="fa-solid fa-question"></i>
-                        Tentang Kami
+                    <a href="<?= BASEURL . '/about'; ?>" class="nav-link <?= isset($data['active_about']) ? $data['active_about'] : ''; ?>">
+                        <i class="fa-solid fa-question"></i> Tentang Kami
                     </a>
                 </li>
             </ul>
         </div>
 
-        <div class="conten-warp flex-grow-1 p-3">
+        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="sidebarMenu">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="<?= BASEURL; ?>" class="nav-link <?= isset($data['active_dashboard']) ? $data['active_dashboard'] : ''; ?>">
+                            <i class="fa-solid fa-house"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<?= BASEURL . '/mahasiswa'; ?>" class="nav-link <?= isset($data['active_mahasiswa']) ? $data['active_mahasiswa'] : ''; ?>">
+                            <i class="fa-solid fa-users"></i> Data Mahasiswa
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<?= BASEURL . '/about'; ?>" class="nav-link <?= isset($data['active_about']) ? $data['active_about'] : ''; ?>">
+                            <i class="fa-solid fa-question"></i> Tentang Kami
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-wrap flex-grow-1 w-100 p-3">
