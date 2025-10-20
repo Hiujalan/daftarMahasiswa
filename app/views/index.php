@@ -13,15 +13,16 @@
                         <div class="col-lg-12">
                             <div class="row">
                                 <div class="col-lg-4 col-sm-12">
+                                    <a href="<?= BASEURL; ?>/mahasiswa" class="text-white text-decoration-none">
                                     <div class="card bg-info text-white mb-3">
                                         <div class="card-body">
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <h4>Data Mahasiswa</h4>
+                                                <h4>Jumlah Data Mahasiswa</h4>
                                                 <div class="icon-stats">
                                                     <i class="fa-solid fa-users fa-2xl"></i>
                                                 </div>
                                             </div>
-                                            <h5 class="fw-bold"><?= $data['count_mahasiswa']['total']; ?></h5>
+                                            <h5 class="fw-bold"><?= $data['count_mahasiswa']['total']; ?> Mahasiswa</h5>
                                         </div>
                                     </div>
                                 </div>
