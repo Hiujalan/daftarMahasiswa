@@ -5,7 +5,7 @@ class Dashboard extends Controller
     protected $mahasiswaModel;
     public function __construct()
     {
-        $this->mahasiswaModel = $this->models('mahasiswaModel');
+        $this->mahasiswaModel = $this->models('MahasiswaModel');
     }
     public function index()
     {
