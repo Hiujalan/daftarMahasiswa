@@ -18,8 +18,8 @@
                     <tr>
                       <th>No</th>
                       <th>NIM</th>
-                      <th>Nama Mahasiswa</th>
-                      <th>Program Studi</th>
+                      <th>Nama</th>
+                      <th>Prodi</th>
                       <th>Semester</th>
                       <th>Status</th>
                       <th>Created At</th>
@@ -68,12 +68,12 @@
           <input type="text" class="form-control" id="nim" name="nim" required>
         </div>
         <div class="mb-3">
-          <label for="nama" class="form-label">Nama Mahasiswa</label>
+          <label for="nama" class="form-label">Nama</label>
           <input type="text" class="form-control" id="nama" name="nama" required>
         </div>
         <div class="mb-3">
-          <label for="prodi" class="form-label">Program Studi</label>
-          <input type="text" class="form-control" id="prodi" name="prodi" required>
+          <label for="prodi" class="form-label">Prodi</label>
+          <input type="number" class="form-control" id="prodi" name="prodi" required>
         </div>
         <div class="mb-3">
           <label for="semester" class="form-label">Semester</label>
@@ -112,12 +112,12 @@
           <input type="text" class="form-control" name="nim" value="<?= $mhs['nim']; ?>" required>
         </div>
         <div class="mb-3">
-          <label for="nama" class="form-label">Nama Mahasiswa</label>
+          <label for="nama" class="form-label">Nama</label>
           <input type="text" class="form-control" name="nama" value="<?= $mhs['nama']; ?>" required>
         </div>
         <div class="mb-3">
-          <label for="prodi" class="form-label">Program Studi</label>
-          <input type="text" class="form-control" name="prodi" value="<?= $mhs['prodi']; ?>" required>
+          <label for="prodi" class="form-label">Prodi</label>
+          <input type="number" class="form-control" name="prodi" value="<?= $mhs['prodi']; ?>" required>
         </div>
         <div class="mb-3">
           <label for="semester" class="form-label">Semester</label>

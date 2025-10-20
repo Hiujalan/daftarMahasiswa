@@ -1,11 +1,15 @@
 </div>
 </div>
 
-<nav class="navbar fixed-bottom bg-body-tertiary text-center">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><?= date('Y'); ?> Uts Web Programming 2</a>
+<footer class="footer mt-auto py-3 bg-light border-top shadow-sm fixed-bottom">
+    <div class="container text-center">
+        <p class="mb-1 text-muted small">
+            &copy; <?= date('Y'); ?> <strong>CRUD UTS Web 2</strong> —
+            Created by : 
+            <span class="fw-semibold">Alan-Azza-Fathur</span>.
+        </p>
     </div>
-</nav>
+</footer>
 
 
 <!-- jQuery & DataTables JS (harus sebelum Bootstrap Bundle) -->
