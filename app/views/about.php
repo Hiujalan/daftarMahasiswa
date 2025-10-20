@@ -19,7 +19,7 @@
                                             <h5 class="card-title">Alan Herva Ikhsan Saputra</h5>
                                             <p class="card-text">Mahasiswa Politeknik Negeri Madiun Angkatan tahun 24, dengan NIM 244311001</p>
                                             <p><i class="fa-brands fa-whatsapp"></i>   : +62 895-2004-0070</p>
-                                            <p><i class="fa-regular fa-envelope"></i>   : @gmail.com</p>
+                                            <p><i class="fa-regular fa-envelope"></i>   : alanherva262@gmail.com</p>
                                         </div>
                                     </div>
                                 </div>
@@ -36,12 +36,12 @@
                                 </div>
                                 <div class="col-lg-4 col-sm-12 mb-3">
                                     <div class="card border-info">
-                                        <img src="<?= BASEURL . '/img/fathur.jpg'; ?>" class="card-img-top" alt="profile picture" style="max-height: 300px; object-fit: cover; object-position: center;">
+                                        <img src="<?= BASEURL . '/img/profile.jpg'; ?>" class="card-img-top" alt="profile picture" style="max-height: 300px; object-fit: cover; object-position: center;">
                                         <div class="card-body">
                                             <h5 class="card-title">Fathur Roshin Haddinanta</h5>
                                             <p class="card-text">Mahasiswa Politeknik Negeri Madiun Angkatan tahun 24, dengan NIM 244311014</p>
                                             <p><i class="fa-brands fa-whatsapp"></i>   : +62 857-3286-0583</p>
-                                            <p><i class="fa-regular fa-envelope"></i>   : fathurroshin@gmail.com</p>
+                                            <p><i class="fa-regular fa-envelope"></i>   : @gmail.com</p>
                                         </div>
                                     </div>
                                 </div>

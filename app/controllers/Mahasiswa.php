@@ -28,7 +28,7 @@ class Mahasiswa extends Controller
             $data = [
                 'nim'       => $_POST['nim'],
                 'nama'      => $_POST['nama'],
-                'prodi'      => $_POST['prodi'],
+                'prodi'     => $_POST['prodi'],
                 'semester'  => $_POST['semester'],
                 'status'    => $_POST['status']
             ];
@@ -50,7 +50,7 @@ class Mahasiswa extends Controller
                 'id'        => $id,
                 'nim'       => $_POST['nim'],
                 'nama'      => $_POST['nama'],
-                'prodi'      => $_POST['prodi'],
+                'prodi'     => $_POST['prodi'],
                 'semester'  => $_POST['semester'],
                 'status'    => $_POST['status']
             ];

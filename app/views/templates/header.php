@@ -23,16 +23,25 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid">
-            <h1 class="navbar-brand pl-10" href="#">CRUD UTS WEB 2</h1>
+            <a class="navbar-brand text" href="#">
+                <img src="./img/logopnm.jpg" class="d-inline-block align-text-top" width="50" height="30" style="padding-left: 20px;">
+                Politeknik Negeri Madiun
+            </a>
+            <!-- <h1 class="navbar-brand " style="padding-left: 20px;" href="#">CRUD UTS WEB 2</h1> -->
+            <div class="date-time d-flex" style="padding-right: 20px;">
+                <span><?= date("d M Y") ?></span>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
     </nav>
 
-    <div class="d-flex">
+
+
+    <div class="d-flex fixed">
         <div class="d-none d-md-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px; height: 100vh; position: sticky; top: 0;">
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
@@ -79,4 +88,4 @@
             </div>
         </div>
 
-        <div class="content-wrap flex-grow-1 w-100 p-3">
+        <div class="content-wrap flex-grow-1 w-100 p-3 pt-0">
